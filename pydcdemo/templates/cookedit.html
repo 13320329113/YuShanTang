@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+            *{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family:"微软雅黑";
+	font-size: 14px;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+
+ul{
+	list-style: none;
+}
+
+h3{
+
+	line-height: 38px;
+}
+
+.tb{
+	width:calc(100% - 10px);
+	border-collapse: collapse;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.tb td{
+	border: solid 1px #eee;
+	height:30px;
+	padding-left: 5px;
+}
+
+.tb td.lable{
+	width: 100px;
+	text-align: right;
+	padding-right: 5px;
+}
+
+
+
+.tb input{
+	width:300px;
+	height: 20px;
+}
+
+textarea{
+	width: 650px;
+	height:200px;
+	margin: 3px 0;
+}
+.path{
+	height: 30px;
+	margin-left: 5px;
+	line-height: 30px;
+	color: #333;
+}
+
+.tblis tr:hover{
+	background-color: #8A2BE2;
+	color: white;
+}
+
+.tblis tr:hover a{
+
+	color: white;
+}
+
+.tblis td{
+	text-align: center;
+}
+
+.tblis td.tdleft{
+	text-align: left;
+}
+
+.tblis td a{
+	margin-left:5px;
+}
+
+#btnsave{
+	width: 80px;
+	height: 26px;
+}
+
+        </style>
+	</head>
+	<body>
+		<form action="/cookeditpost/" method="post" enctype="multipart/form-data">{% csrf_token %}
+			<p class="path">当前位置:点餐系统/发布菜品</p>
+			<table border="0" cellspacing="0" cellpadding="0" class="tb">
+                <input type="hidden" name="proid" value="{{cookview.id  }}"/>
+                <input type="hidden" name="oldimgurl" value="{{cookview.imgurl  }}"/>
+                <tr><td class="lable">照片</td><td><input type="file" name="imgurl"/></td></tr>
+				<tr><td class="lable">姓名</td><td><input type="text" name="cookname" value="{{cookview.cookname  }}"/></td></tr>
+                <tr><td class="lable">描述</td><td><textarea name="cookdescribe" value="{{cookview.cookdescribe  }}"></textarea></td></tr>
+<!--				<tr><td class="lable">标签</td><td><input type="text" name="tbbrief" value="{{cookview.brief  }}"/></td></tr>-->
+                <tr><td>标签：</td>
+					<td class="check-box" data-lable="{{cookview.cooklable}}">
+						<input class="lable" type="checkbox" name="cooklable" value="精品">精品
+						<input class="lable" type="checkbox" name="cooklable" value="优选">优选
+						<input class="lable" type="checkbox" name="cooklable" value="热销">热销
+                	</td>
+				</tr>
+				<tr><td class="lable">&nbsp;</td><td><input type="submit" name="btnsave" value="保存" id="btnsave"/> {{ cookview.msg}}</td></tr>
+			</table>
+		</form>
+		<script src="/static/myadmin/js/jquery-1.11.0.js"></script>
+		<script>
+			var lable = $(".check-box").attr("data-lable")
+			console.log(lable)
+			console.log(typeof lable)
+			$(".lable").each(function(){
+				if(lable.indexOf($(this).val()) != -1)
+					$(this).attr("checked", true)
+			})
+		</script>
+	</body>
+</html>

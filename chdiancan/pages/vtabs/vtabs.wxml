@@ -1,0 +1,29 @@
+<mp-vtabs 
+  vtabs="{{vtabs}}" 
+  activeTab="{{activeTab}}" 
+  bindtabclick="onTabCLick"
+  bindchange="onChange"
+  class="test"
+>
+  <block wx:for="{{vtabcontents}}" wx:key="title" >
+    <mp-vtabs-content tabIndex="{{index}}">
+      <view class="vtabs-content-item"> {{item.typename}}   
+        <block wx:for="{{item.prolist}}"  wx:key="childkey" wx:for-index="childindex" wx:for-item="childitem" >
+          <view class="kk"> 
+            <image src="http://127.0.0.1:8000/static/uploadimg/{{childitem.imgurl}}"/>  
+            <view class="caiming"> {{childitem.proname}}</view>
+            <view class="yuanjia">￥{{childitem.price}}/份</view>
+            <view class="xiadan" bindtap="fngotoshopcar" data-food="{{childitem}}">加入购物车</view>
+          </view>
+  
+          
+        </block>
+        
+     
+      </view>
+    
+    </mp-vtabs-content>
+   
+  </block>
+  
+</mp-vtabs>

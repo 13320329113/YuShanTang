@@ -1,0 +1,16 @@
+.bala{
+  border-top: 50rpx solid brown;
+  width: 100%;
+  
+ }
+.balabalaba{
+  
+  width: 80%;
+  justify-content: center;
+  text-indent: 2ex;
+  
+}
+.balabala{
+text-align: center;
+font-size: large;
+}

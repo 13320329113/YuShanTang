@@ -1,0 +1,47 @@
+<!--pages/register/register.wxml-->
+<view wx:if="{{!success}}">
+<view class="header">
+          欢迎注册御膳堂小程序
+</view>
+ <view class='row'>
+        <view class='info'>
+               <input  class= 'info-input1' bindinput="handleInputusername" placeholder="请输入你的用户名" />
+        </view>
+         
+</view>
+<view class='row'>
+        <view class='info'>
+               <input  class= 'info-input1' bindinput="handleInputtruename" placeholder="请输入你的真实姓名" />
+        </view>
+</view>
+<view class='row'>
+        <view class='info'>
+               <input  class= 'info-input1' bindinput="handleInputtel" placeholder="请输入你的手机号码" />
+        </view>
+      
+</view>
+<view class='row'>
+        <view class='info'>
+               <input  class= 'info-input1' bindinput="handleInputaddress" placeholder="请输入你的地址" />
+        </view>
+      
+</view>
+<view class='row'>
+        <view class='info'>
+               <input type='password' class= 'info-input' bindinput="handleNewChanges" placeholder="请输入你的密码" />
+        </view>
+ 
+ </view>
+<view class='row'>
+        <view class='info'>
+               <input  type='password' class= 'info-input' bindinput="handleNewChangesAgain" placeholder="请再次输入你的密码" />
+        </view>
+ 
+ </view>
+ <button class='submit' bindtap='submit'>提交</button>
+ </view>
+ <view class = 'success' wx:if="{{success}}">
+ <view class='cheer'><icon type="success" size="24"/> 恭喜您注册成功!</view>
+ <button type = "default" class = 'return' bindtap='return_home'>返回登录</button>
+ </view>
+

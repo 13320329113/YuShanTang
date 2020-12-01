@@ -1,0 +1,24 @@
+<!--pages/cooker/cooker.wxml-->
+<view class="searchbox">
+  <image src="/pages/img/s3.png" mode="widthFix"/>
+  <input type="text" placeholder="西餐、王师傅" />
+</view>
+
+
+<view class="listbox">
+		<block wx:for="{{cooklist}}"  wx:key="key" wx:for-index="index" wx:for-item="item">
+			<view class="fooditem" hover-class="itemhover" data-id="{{item.id}}">
+				<image src="http://127.0.0.1:8000/static/uploadimg/{{item.imgurl}}" mode="widthFix" />
+				<view class="rightbox">
+					<view class="line1">{{item.cookname}}</view>
+					<view class="line2">{{item.cookdescribe}}</view>
+					<!-- <view class="line4">{{item.cooklable}}</view> -->
+					<view class="line4"><text>{{item.cooklable}}</text></view>
+				</view>
+			</view>
+		</block>
+    
+
+
+	</view>
+

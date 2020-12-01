@@ -1,0 +1,83 @@
+@import '../common.wxss';
+
+page{
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+.vtabs-content-item {
+    width: 100%;
+    height: 1000px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    /* background-color:yellow; */
+}
+/* .liebiao{
+  width: 100%;
+  height: 300px;
+  background-color: blue;
+} */
+/* .kk1{
+  background-color:blue;
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 100rpx;
+} */
+
+.kk{
+  background-color:blue;
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 90rpx;
+}
+
+.kk image{
+  width: 180rpx;
+  height: 180rpx;
+  float: left;
+  
+}
+
+/* .kk1 image{
+  width: 180rpx;
+  height: 200rpx;
+  float: left;
+  
+} */
+.caiming{
+  font-size: 35rpx;
+  /* background-color: red; */
+  width: 250rpx;
+  height: 50rpx;
+ margin-left: 200rpx;
+ margin-top: 0rpx;
+}
+.yuanjia{
+  color: red;
+  font-size: 35rpx;
+  /* background-color: red; */
+  width: 140rpx;
+  height: 50rpx;
+  margin-left: 200rpx;
+  margin-top: 10rpx;
+  position: absolute;
+
+}
+
+.xiadan{
+  font-size: 30rpx;
+  background-color:orange;
+  width: 150rpx;
+  height: 50rpx;
+  margin-left: 320rpx;
+  margin-top: 10rpx;
+  box-shadow: 0 0 5rpx 1rpx rgba(0, 0,0, 0.8);
+  border-radius: 15rpx;
+}
+.xiadan:hover{
+  background-color: lightgray;
+}
+
+
+

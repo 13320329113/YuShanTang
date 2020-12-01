@@ -1,0 +1,53 @@
+/* pages/my/my.wxss */
+
+#bigbox{
+  height: 300rpx;
+  position: relative;
+}
+#bigbox image{
+width:160rpx;
+position: absolute;
+right:30rpx;
+top:30rpx;
+}
+.hoveritem{
+background-color: #eee;
+}
+
+.title{
+font-size:45rpx;
+color: #000;
+padding-left: 20rpx;
+font-weight: bold;
+padding-top: 30rpx;
+}
+
+.subtitle{
+font-size:38rpx;
+color: #999;
+padding-left: 20rpx;
+line-height: 60rpx;
+}
+
+.item{
+height:100rpx;
+margin-bottom: 10rpx;
+position: relative;
+}
+
+.item image{
+width:80rpx;
+margin-top: 10rpx;
+margin-left: 10rpx;
+}
+
+.item .rightbox{
+  width:calc(100% - 120rpx);
+  height: 100rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  line-height: 100rpx;
+  border-bottom: solid 1rpx #eee;
+}

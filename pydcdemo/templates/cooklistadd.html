@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <form action="/cookeraddpost/" method="post" enctype="multipart/form-data">{% csrf_token %}
+			<p class="path">当前位置:厨师列表/厨师介绍</p>
+			<table border="0" cellspacing="0" cellpadding="0" class="tb">
+				<tr><td class="lable">姓名：</td><td><input type="text" name="cookname"/></td></tr>
+				<tr><td class="lable">图片：</td><td><input type="file" name="tbpic"/></td></tr>
+				<tr><td class="lable">描述：</td><td><input type="text" name="cookdes"/></td></tr>
+				<tr>
+					<td>厨师标签：</td>
+					<td><input type="checkbox" name="cooklable" value="精品">精品
+						 <input type="checkbox" name="cooklable" value="优选">优选
+						 <input type="checkbox" name="cooklable" value="热销">热销
+					 </td>
+				</tr>
+				<tr><td class="lable">&nbsp;</td><td><input type="submit" name="btnsave" value="保存" id="btnsave"/> {{ msg}}</td></tr>
+			</table>
+		</form>
+
+</body>
+</html>

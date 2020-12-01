@@ -1,0 +1,100 @@
+/* pages/login/login.wxss */
+page{
+  background:linear-gradient(blue, orange, yellow);
+}
+.header{
+  height: 230rpx;
+  /* background-color:	#ff6600 ; */
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  line-height: 230rpx;
+}
+.itembox{
+  width: 100%;
+}
+.first{
+  border-top: solid 1px #eee;
+  margin-top: 3rpx;
+}
+.username{
+  font-size: 55rpx;
+}
+.subtitle{
+  color: #ccc;
+}
+.header image{
+  width: 200rpx;
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+  border-radius: 100rpx;
+}
+.itembox .item{
+  border-bottom: solid 1px #eee;
+  height:90rpx;
+  line-height:90rpx;
+  padding: 0 20rpx;
+}
+.itembox image{
+  width: 200rpx;
+}
+
+.fitem{
+  height:90rpx;
+  border-bottom: solid 1px #eee;
+  position: relative;
+  line-height: 90rpx;
+  padding: 0 20rpx;
+}
+
+.fitem text{
+  width: 200rpx;
+  font-weight: bold;
+  text-align: right;
+  display: inline-block;
+}
+
+.fitem-big{
+  height:220rpx;
+  border-bottom: solid 1px #eee;
+  position: relative;
+  line-height: 90rpx;
+  padding: 0 20rpx;
+}
+
+.fitem input{
+  width:calc(100% - 220rpx);
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+.fitem-big textarea{
+  width:calc(100% - 220rpx);
+  position: absolute;
+  right: 0;
+  top: 10rpx;
+  line-height:60rpx;
+  max-height: 200rpx;
+}
+
+.btnreg{
+  width:calc(100% - 30rpx);
+  height:80rpx;
+  line-height:80rpx;
+  text-align: center;  
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  background-color: #ff6600;
+  color: #fff;
+  border: solid 1px #ff6600;
+}
+.hoverclass{
+  background-color:#eee;
+  border: solid 1px #ccc;
+  color: #333;
+}

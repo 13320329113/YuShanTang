@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/privateroom/privateroom",
+    "pages/vtabs/vtabs",
+    "pages/message/message",
+    "pages/test2/test2",
+    "pages/test/test",
+    "pages/shopcar/shopcar",
+    "pages/foodview/foodview",
+    "pages/myorder/myorder",
+    "pages/my/my",
+    "pages/cooker/cooker",
+    "pages/foodlist/foodlist",
+    "pages/logs/logs",
+    "pages/register/register",
+    "pages/company/company"
+    
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "pages/img/tab1-b.png",
+        "iconPath": "pages/img/tab1-a.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/img/tab2-b.png",
+        "iconPath": "pages/img/tab2-a.png",
+        "pagePath": "pages/foodlist/foodlist",
+        "text": "菜品"
+      },
+      {
+        "selectedIconPath": "pages/img/tab3-b.png",
+        "iconPath": "pages/img/tab3-a.png",
+        "pagePath": "pages/shopcar/shopcar",
+        "text": "购物车"
+      },
+      {
+        "selectedIconPath": "pages/img/tab4-b.png",
+        "iconPath": "pages/img/tab4-a.png",
+        "pagePath": "pages/my/my",
+        "text": "我"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,10 @@
+<!--pages/message/message.wxml-->
+<view class="section">
+<textarea class="message1" type="text" placeholder="请选择快速留言或者输入您的留言" maxlength="80" style="word-wrap:break-word" onfocus="this.blur()" value="{{msg1}}" bindinput="fnmsg"></textarea>
+</view>
+<view class="fast" bindinput="fnneirong">快速留言：{{neirong}}</view>
+<view class="item" wx:for="{{msgData}}" wx:key="{{index}}">
+<view class='circle'></view>
+  <text data-nr='{{item.msg}}' class='message_font' bindtap='clickMe'>{{item.msg}}</text>
+</view> 
+<button class="submit" bindtap="liuyan">留言</button>
